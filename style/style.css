@@ -1,0 +1,155 @@
+/*---styles, this is is where the magic happens (if css isn't acting up---*/
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+/*---Body---*/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: #ddd;
+}
+
+/*---Cosmos background---*/
+
+.header {
+  padding: 0px;
+  text-align: center;
+  background: #333;
+  color: white;
+  margin: 0px;
+}
+
+/*---Cosmos text---*/
+
+.header h1 {
+  font-size: 40px;
+  color: white;
+}
+
+/*---Naviation---*/
+
+.navbar {
+  overflow: hidden;
+  background: #0f0f0f;
+  color: white;
+}
+
+/*---Naviation links---*/
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+/*---Hover on navigation---*/
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/*---Contanier---*/
+
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/*---The left side---*/
+
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #1c1c1c;
+  padding: 20px;
+  color: white;
+}
+
+/*---Main---*/
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+  background: #242424;
+}
+
+.main h2 {
+  color: white;
+}
+
+.main p {
+  color: white;
+}
+
+/*---Bottom---*/
+
+.bottom {
+  padding: 21px;
+  text-align: center;
+  background: #0f0f0f;
+}
+
+.bottom p {
+  color: white;
+}
+
+/*---navigation script---*/
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/*---navigation script---*/
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+/*---Modal script---*/
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
