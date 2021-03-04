@@ -8,18 +8,29 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </style>
 <script src="https://www.w3schools.com/lib/w3.js"></script>
+
 </head>
 <body>
+<script type="text/javascript" src="script/script.js"></script>
+
+<!---Modal for scientist--->
+
+    <button id="modal-Btn" class="button">Albert Einstein</button>
+
+    <div id="simpleModal" class="modal"> 
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="closeBtn">&times;</span>
+                <div class="text">
+                  <h2>Albert Einstein</h2>
+                  <p>Albert Einstein is the father of relativity, his theory proved that black holes and singularities exist.</p>
+                </div>
+              <img class="einstein" src="image/einstein.jpg" align=”left” HSPACE=”50” VSPACE=”50” width="600px" height="800px">
+          </div>    
+        </div>
+    </div>
 
 <!---Background image/slideshow--->
-
-<div class="navbar">
-  <a href="#">Albert Einstein</a>
-  <a href="#">Isaac Newton</a>
-  <a href="#">Stephen Hawking</a>
-  <a href="#">Galileo Galilei</a>
-  <a href="#">James Clerk Maxwell</a>
-</div>
 
 <div class="header">
   <img class="cosmosslide" src="image/universe.png" width="100%">
@@ -45,26 +56,19 @@
     <div class="main">
         <h2>What is Cosmos?</h2>
         <p>Cosmos is often confused with the universe; the cosmos is seeing the universe as a complex whole whilst the universe is the focuses on the all existing matter, time and space.</p>
-        <p>Cosmos, a mystery in our eyes, but beauty in reality. What is above, below or to the sides of us is cosmos. According to Aristotle, we are on a planet that is in the center of universe, but scientist has leter found out that every planet is considered to be in the center, it is so extraordinarily large that we might not ever reach any of the corners of our universe. According to Hawking, our universe is expanding in a rapidly increasing rate, it is proven because the planets are slowly moving away. How? you may ask.. the biggest evidence right now is the doppler effect..</p>
+        <p>Cosmos, a mystery in our eyes, but beauty in reality. What is above, below or to the sides of us is cosmos. According to Aristotle, we are on a planet that is in the center of universe, but scientist has leter found out that every planet is considered to be in the center, it is so extraordinarily large that we might not ever reach any of the corners of our universe. According to Hawking, our unive  <p>I am a student in the highschool entitled "Cybergymnasiet", I want to become a physicist. My passion of physics started when I was introduced to radioactivity in middleschool, it was so fascinated and I kept getting more and more curious. I completely forgot about science since it was taken away from me and i started studying IT, it was not the right program for me to study. I was later introduced into the world of engineering and i kept getting more curious, it ended up with me looking at mathematical formulas of how the world works around us; the electromagnetic spectrum, how particles act, what the universe is built from, why it is built, how did it start, and will it ever end? Those questions were answered by a lot of famous scientist that are linked on the navigation by above, you are more than welcome to read about them.</p>
+
+
+        <p>“I have no special talents. I am only passionately curious.”
+        <p>Albert Einstein.</p>
+        <p>The universe is expanding in a rapidly increasing rate, it is proven because the planets are slowly moving away. How? you may ask.. the biggest evidence right now is the doppler effect..</p>
         <br>
         <h2>The universe is built from matter, what is matter afterall..?</h2>
         <p>At the most fundamental level, matter is composed of elementary particles, known as quarks and leptons (the class of elementary particles that includes electrons). Quarks combine into protons and neutrons and, along with electrons, form atoms of the elements of the periodic table, such as hydrogen, oxygen, and iron. Atoms may combine further into molecules such as the water molecule, H2O. Large groups of atoms or molecules in turn form the bulk matter of everyday life.Depending on temperature and other conditions, matter may appear in any of several states. At ordinary temperatures, for instance, gold is a solid, water is a liquid, and nitrogen is a gas, as defined by certain characteristics: solids hold their shape, liquids take on the shape of the container that holds them, and gases fill an entire container. These states can be further categorized into subgroups. Solids, for example, may be divided into those with crystalline or amorphous structures or into metallic, ionic, covalent, or molecular solids, on the basis of the kinds of bonds that hold together the constituent atoms. Less-clearly defined states of matter include plasmas, which are ionized gases at very high temperatures; foams, which combine aspects of liquids and solids; and clusters, which are assemblies of small numbers of atoms or molecules that display both atomic-level and bulklike properties</p>
 
-        <p>How much do we know about the universe?</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
         </div>
     </div>
-
-<!---The Modal--->
-
-<button id="myBtn">Albert Einstein</button>
-<div id="myModal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Albert einstein discovered that space warps time</p>
-  </div>
-
-</div>
 
 <!---Bottom part--->
 
@@ -72,33 +76,9 @@
       <p>A website created by Abed El Bayroumi about cosmos.</p>
 </div>
 
+<!---Script for slideshow--->
+
     <script>
       w3.slideshow(".cosmosslide", 1500);
     </script>
-
-<!---Script for closing the modal--->
-
-    <script>
-var modal = document.getElementById("myModal");
-
-var btn = document.getElementById("myBtn");
-
-var span = document.getElementsByClassName("close")[0];
-
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
-
-<!---Modal section--->
 

@@ -13,6 +13,114 @@ body {
   background: #ddd;
 }
 
+/*---Modal---*/
+
+.button {
+  background: #0f0f0f;
+  padding: 1em 2em;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #ffffff;
+}
+
+.modal{
+  /*display:none;*/
+  position: fixed;
+  z-index:1;
+  left: 0;
+  top: -830px;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content{
+  background: #0f0f0f;
+  margin: 50% auto;
+  padding: 20px;
+  width: 70%;
+  text-align: left;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  animation-name: modalopen;
+  animation-duration: var(--modal-duration);
+}
+
+.closeBtn{
+  color: #ffffff;
+  float: right;
+}
+
+.text{
+  padding: 20px;
+  width: 600px;
+  color: white;
+  position: absolute;
+  box-sizing: border-box;
+  transform: translate(100%);
+}
+
+.closeBtn{
+  color: white;
+  font-size: 25px;
+}
+
+.closeBtn:hover,.closeBtn:focus{
+  color: rgb(170, 170, 170);
+  text-decoration: none;
+  cursor:pointer;
+
+}
+
+.einstein{
+
+}
+
+.modal-header h2,
+.modal-footer h3 {
+  margin: 0;
+}
+
+.modal-header {
+  background: var(--modal-color);
+  padding: 15px;
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.modal-body {
+  padding: 10px 20px;
+  background: #fff;
+}
+
+.close {
+  color: #ccc;
+  float: right;
+  font-size: 30px;
+  color: #fff;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
 /*---Cosmos background---*/
 
 .header {
@@ -30,45 +138,19 @@ body {
   color: white;
 }
 
-/*---Naviation---*/
-
-.navbar {
-  overflow: hidden;
-  background: #0f0f0f;
-  color: white;
-}
-
-/*---Naviation links---*/
-
-.navbar a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 15px 20px;
-  text-decoration: none;
-}
-
-/*---Hover on navigation---*/
-
-.navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
 /*---Contanier---*/
 
 .row {  
-  display: -ms-flexbox; /* IE10 */
+  display: -ms-flexbox; 
   display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
 /*---The left side---*/
 
 .side {
-  -ms-flex: 30%; /* IE10 */
+  -ms-flex: 30%;
   flex: 30%;
   background-color: #1c1c1c;
   padding: 20px;
@@ -76,8 +158,9 @@ body {
 }
 
 /*---Main---*/
+
 .main {   
-  -ms-flex: 70%; /* IE10 */
+  -ms-flex: 70%;
   flex: 70%;
   background-color: white;
   padding: 20px;
@@ -102,54 +185,4 @@ body {
 
 .bottom p {
   color: white;
-}
-
-/*---navigation script---*/
-
-@media screen and (max-width: 700px) {
-  .row {   
-    flex-direction: column;
-  }
-}
-
-/*---navigation script---*/
-
-@media screen and (max-width: 400px) {
-  .navbar a {
-    float: none;
-    width: 100%;
-  }
-}
-
-/*---Modal script---*/
-
-.modal-header {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
-}
-
-.modal-body {padding: 2px 16px;}
-
-.modal-footer {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
-}
-
-.modal-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  border: 1px solid #888;
-  width: 80%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  animation-name: animatetop;
-  animation-duration: 0.4s
-}
-
-@keyframes animatetop {
-  from {top: -300px; opacity: 0}
-  to {top: 0; opacity: 1}
 }
