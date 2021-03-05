@@ -54,12 +54,16 @@ body {
 
 .text{
   padding: 10px;
-  width: 600px;
+  width: 45%;
   color: white;
   transform: 100px, 200px;
   float: right;
   box-sizing: border-box;
   position: relative;
+}
+
+.clear {
+  clear: both;
 }
 
 .closeBtn{
@@ -75,7 +79,7 @@ body {
 }
 
 .einstein{
-
+  width: 50%;
 }
 /*---Cosmos text---*/
 
